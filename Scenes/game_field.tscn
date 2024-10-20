@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://w81jrin4x6i1"]
+
+[ext_resource type="Script" path="res://addons/light_wave_plugin/MyButton.cs" id="1_kawc8"]
+
+[node name="GameField" type="Node2D"]
+
+[node name="MyButton" type="Button" parent="."]
+offset_left = 88.0
+offset_top = 48.0
+offset_right = 96.0
+offset_bottom = 56.0
+text = "dsadas"
+script = ExtResource("1_kawc8")
