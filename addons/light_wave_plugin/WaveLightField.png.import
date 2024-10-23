@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b3t7ctwg0h6vh"
-path="res://.godot/imported/exit.png-4d89520f78e666c3a07be70750a0fb3e.ctex"
+uid="uid://b87pxd0rugwy2"
+path="res://.godot/imported/WaveLightField.png-f6c3e78a86b4107cd7117390eb498fe9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://addons/light_wave_plugin/exit.png"
-dest_files=["res://.godot/imported/exit.png-4d89520f78e666c3a07be70750a0fb3e.ctex"]
+source_file="res://addons/light_wave_plugin/WaveLightField.png"
+dest_files=["res://.godot/imported/WaveLightField.png-f6c3e78a86b4107cd7117390eb498fe9.ctex"]
 
 [params]
 
