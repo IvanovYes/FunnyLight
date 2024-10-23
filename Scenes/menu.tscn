@@ -1,0 +1,54 @@
+[gd_scene load_steps=5 format=3 uid="uid://bht6dxhpwwpf"]
+
+[ext_resource type="Texture2D" uid="uid://0j6h4y6gaw5" path="res://source/menu/play.png" id="1_ov7hy"]
+[ext_resource type="Texture2D" uid="uid://6epakgsvfoau" path="res://source/menu/info.png" id="2_20qjw"]
+[ext_resource type="Texture2D" uid="uid://b26iovko8d2gy" path="res://source/menu/exit.png" id="3_h422m"]
+[ext_resource type="Script" path="res://ExitButton.cs" id="4_lww22"]
+
+[node name="Menu" type="Node2D"]
+
+[node name="PlayButton" type="Button" parent="."]
+offset_left = 448.0
+offset_top = 192.0
+offset_right = 704.0
+offset_bottom = 448.0
+focus_neighbor_left = NodePath("../ExitButton")
+focus_neighbor_top = NodePath("../InfoButton")
+focus_neighbor_right = NodePath("../InfoButton")
+focus_neighbor_bottom = NodePath("../ExitButton")
+focus_next = NodePath("../InfoButton")
+focus_previous = NodePath("../ExitButton")
+icon = ExtResource("1_ov7hy")
+flat = true
+icon_alignment = 1
+
+[node name="InfoButton" type="Button" parent="."]
+offset_left = 768.0
+offset_top = 192.0
+offset_right = 1024.0
+offset_bottom = 448.0
+focus_neighbor_left = NodePath("../PlayButton")
+focus_neighbor_top = NodePath("../ExitButton")
+focus_neighbor_right = NodePath("../ExitButton")
+focus_neighbor_bottom = NodePath("../PlayButton")
+focus_next = NodePath("../ExitButton")
+focus_previous = NodePath("../PlayButton")
+icon = ExtResource("2_20qjw")
+flat = true
+icon_alignment = 1
+
+[node name="ExitButton" type="Button" parent="."]
+offset_left = 128.0
+offset_top = 192.0
+offset_right = 384.0
+offset_bottom = 448.0
+focus_neighbor_left = NodePath("../InfoButton")
+focus_neighbor_top = NodePath("../PlayButton")
+focus_neighbor_right = NodePath("../PlayButton")
+focus_neighbor_bottom = NodePath("../InfoButton")
+focus_next = NodePath("../PlayButton")
+focus_previous = NodePath("../InfoButton")
+icon = ExtResource("3_h422m")
+flat = true
+icon_alignment = 1
+script = ExtResource("4_lww22")

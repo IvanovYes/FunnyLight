@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://w81jrin4x6i1"]
+
+[ext_resource type="Script" path="res://addons/light_wave_plugin/WaveLightField.cs" id="1_wtsn7"]
+[ext_resource type="Texture2D" uid="uid://6epakgsvfoau" path="res://source/menu/info.png" id="2_dm68t"]
+[ext_resource type="Script" path="res://addons/light_wave_plugin/WaveLightBase.cs" id="2_l5lrq"]
+
+[node name="GameField" type="Node2D"]
+position = Vector2(472, 272)
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="SubViewport" type="SubViewport" parent="SubViewportContainer"]
+
+[node name="WaveLightField" type="Node" parent="SubViewportContainer"]
+script = ExtResource("1_wtsn7")
+
+[node name="Sprite2D" type="Sprite2D" parent="SubViewportContainer/WaveLightField"]
+position = Vector2(464, 256)
+texture = ExtResource("2_dm68t")
+
+[node name="WaveLightBase" type="Node" parent="SubViewportContainer/WaveLightField"]
+script = ExtResource("2_l5lrq")
